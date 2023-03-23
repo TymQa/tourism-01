@@ -5,6 +5,7 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
+    --color-red: #FF0000;
 }
 
 body {
@@ -18,10 +19,15 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER */
 
 .header {
     height: 800px;
+    padding-top: 31px;
 
     background-color: var(--color-black);
     background-image: url(../img/header-bg.jpg);
@@ -41,5 +47,74 @@ body {
 
 .header-form {
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 54px;
+}
+
+.nav-list__link {
+    color: var(--color-white);
+    opacity: 0.7;
+}
+
+.nav-list__link--active {
+    opacity: 1;
+}
+
+.user {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.user__content {
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.user__greeting {
+    opacity: 0.5;
+}
+
+.user__name {
+    font-weight: 600;
+}
+
+
+.user__avatar {
+    position: relative;
+
+    height: 48px;
+    width: 48px;
+}
+
+.user__avatar::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-red);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.user__avatar-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 /* HEADER */
