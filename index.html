@@ -10,10 +10,10 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
+        <div class="container container--header">
             <nav class="nav">
                 <a href="#" class="logo">
-                    <img src="./img/logo.svg" alt="2rism">
+                    <img src="./img/icons/logo.svg" alt="2rism">
                 </a>
 
                 <ul class="nav-list">
@@ -38,8 +38,33 @@
                 </div>
 
             </nav>
-            <div class="header-title">header title</div>
-            <form action="" class="header-form">form</form>
+            <div class="header__content">
+                <h1 class="header__title">
+                    Discover the most engaging places
+                </h1>
+                <button class="button">
+                    <img src="./img/icons/icon-global.svg" alt="icon global">
+                    Discover on 3D Globe
+                </button>
+            </div>
+                <form action="" class="header__form form">
+
+                <div class="form__input">
+                <label for="destinations" class="label">Location</label>
+                    <select name="" id="destinations">
+                        <option value="all">Explore nearby destinations</option>
+                        <option value="1">Option1</option>
+                        <option value="2">Option2</option>
+                        <option value="3">Option3</option>
+                        <option value="4">Option4</option>
+                    </select>
+                </div>
+
+                <button class="btn-search">
+                    <img src="./img/icons/search.svg" alt="search">
+                </button>
+
+                </form>
         </div>
     </header>
     <!-- HEADER -->
